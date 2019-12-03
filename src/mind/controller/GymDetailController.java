@@ -12,8 +12,7 @@ import mind.service.HealthService;
 public class GymDetailController implements HealthController {
 
 	@Override
-	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response)
-			throws SQLException, IOException {
+	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException {
 		ModelAndView mv = new ModelAndView();
 		//NumberFormatException 주의
 		int code = Integer.parseInt(request.getParameter("code"));
